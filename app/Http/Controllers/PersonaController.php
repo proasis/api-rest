@@ -1,6 +1,8 @@
-<?php namespace App\Http\Controllers;
+<?php
+namespace App\Http\Controllers;
+use App\Persona;
 
-class HomeController extends Controller {
+class PersonaController extends Controller {
 
     public function index()
     {
@@ -41,6 +43,7 @@ class HomeController extends Controller {
     		Persona::create($request->all());
     		return response()->json(['mensaje'=>'Persona creada'],201);
     	}
+
       public function destroy($id)
     	{
     		$persona=Persona::find($id);
