@@ -20,4 +20,5 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 */
-Route::resource('persona','PersonaController', ['only'=>['index', 'update']]);
+
+Route::resource('persona','PersonaController', ['only'=>['index', 'update', 'get', 'post']]);
