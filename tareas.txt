@@ -1,0 +1,15 @@
+webserver minsal
+api.salud.gob.sv
+
+*** libreria esta instalada en /Datos clase guzzlethttp
+
+CONSUMIR: consumopersonascontroller
+01. ruta consumopersonascontroler / index
+02. Llamar la clase personas la cual me va traer los datos de la nube
+03. la clase persona llama el metodo y el URI desde consumopersonascontroller
+04. consumopersonascontroler efectua el consumo de la nube
+05. dentro de este controler escribir la instruccion de inserción
+
+PUBLICAR: PersonaController
+
+**** vaciar el mediador de la transferencia para que el rnpn no haga consultas de estados ya que saturiaria mi servidor...

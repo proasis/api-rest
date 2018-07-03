@@ -53,4 +53,14 @@ class PersonaController extends Controller {
   	$persona->delete();
   	return response()->json(['mensaje'=>'Persona eliminada','codigo'=>'204'],204);
   }
+
+  public function show($id)
+  	{
+  		$persona=Persona::find($id);
+  		if(!$persona){
+  			return response()->json(['mensaje'=>'Persona no encontrada'],200);
+  		}
+  		return response()->json(['datos'=>$persona],200);
+  	}
+
 }
